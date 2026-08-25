@@ -1,5 +1,7 @@
 *[English version](README.en.md)*
 
+<p align="center"><img src="docs/brand/social-preview.png" alt="Solar Community" width="800"></p>
+
 # Solar Community
 
 > Un framework open source pour concevoir, dimensionner et superviser des micro-réseaux solaires communautaires — sans dépendre des fournisseurs d'énergie centralisés.
