@@ -1,0 +1,42 @@
+name: "🔧 Proposition de composant / Component proposal"
+description: Proposer ou discuter un composant (panneau, contrôleur, batterie, capteur). Format utilisé par sho-kitbuilder. / Propose or discuss a component. Same format sho-kitbuilder uses.
+title: "[component] "
+labels: ["hardware", "sho-kitbuilder"]
+body:
+  - type: input
+    id: component
+    attributes:
+      label: "Composant / Component"
+    validations:
+      required: true
+  - type: input
+    id: datasheet
+    attributes:
+      label: "Lien datasheet / Datasheet link"
+    validations:
+      required: true
+  - type: input
+    id: price
+    attributes:
+      label: "Prix approximatif et disponibilité / Approximate price and availability"
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: "Pourquoi ce choix plutôt qu'une alternative ? / Why this over an alternative?"
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: "Sécurité / Safety"
+      options:
+        - label: "Cette proposition ne comporte aucune instruction d'installation ou de câblage électrique. / This proposal contains no installation or electrical-wiring instructions."
+          required: true
+  - type: textarea
+    id: limits
+    attributes:
+      label: "Limites connues / Known limitations"
+    validations:
+      required: false

@@ -1,0 +1,32 @@
+name: "🐛 Bug report / Rapport de bug"
+description: Un comportement cassé dans le firmware, le backend, le dashboard ou l'outillage. / Something broken in firmware, backend, dashboard, or tooling.
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description (FR/EN)"
+      description: Que se passe-t-il, et que devrait-il se passer ? / What happens, and what should happen instead?
+    validations:
+      required: true
+  - type: dropdown
+    id: pillar
+    attributes:
+      label: "Pilier concerné / Affected pillar"
+      options:
+        - firmware
+        - bom
+        - siting
+        - backend
+        - dashboard
+        - documentation
+        - autre / other
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: "Étapes de reproduction / Steps to reproduce"
+    validations:
+      required: false

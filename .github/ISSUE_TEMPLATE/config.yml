@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Question générale / General question
+    url: https://github.com/NakedoShadow/solar-community/discussions
+    about: Pour une question ouverte plutôt qu'un bug ou une proposition précise / For an open question rather than a specific bug or proposal.

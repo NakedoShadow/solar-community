@@ -1,0 +1,24 @@
+name: "⚡ Préoccupation sécurité électrique / Electrical safety concern"
+description: Un contenu, une fonctionnalité ou une PR qui toucherait, même indirectement, à l'installation physique d'un système électrique. Traité en priorité absolue. / Content, a feature, or a PR touching, even indirectly, physical electrical installation. Handled as absolute priority.
+title: "[safety] "
+labels: ["safety", "sho-safeguard", "priority"]
+body:
+  - type: textarea
+    id: concern
+    attributes:
+      label: "Description du risque / Description of the risk"
+      description: Quel contenu, dans quel fichier, et quel est le scénario de risque ? / What content, in which file, and what's the risk scenario?
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: "Fichier(s) concerné(s) / Affected file(s)"
+    validations:
+      required: false
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: "Correctif suggéré, si vous en avez un / Suggested fix, if you have one"
+    validations:
+      required: false
